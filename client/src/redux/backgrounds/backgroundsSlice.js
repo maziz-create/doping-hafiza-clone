@@ -13,3 +13,5 @@ export const backgroundsSlice = createSlice({
         }
     }
 })
+
+export default backgroundsSlice.reducer;
