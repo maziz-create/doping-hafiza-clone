@@ -1,0 +1,33 @@
+.carousel-indicators {
+    bottom: -2rem;
+}
+
+.carousel-control-prev {
+    left: -5rem;
+}
+
+.carousel-control-next {
+    width: 1.9rem;
+}
+
+.homepage-carousel-1-div {
+    top: 8.5rem;
+    left: 4.5rem;
+    width: 26rem;
+}
+
+.homepage-carousel-1-div-heading {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-shadow: 3px 3px 0 rgb(34 34 34 / 20%);
+}
+
+.homepage-carousel-1-div-text {
+    margin-top: 2rem;
+}
+
+.homepage-carousel-1-div-button {
+    color: rgb(107, 3, 107);
+    font-weight: 500;
+}

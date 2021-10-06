@@ -1,15 +1,14 @@
 import React from 'react'
-import './style.css'
 
 import Nav from 'react-bootstrap/Nav'
 import Container from 'react-bootstrap/Container'
 import Navbar from 'react-bootstrap/Navbar'
 
-import logo from '../../assets/images/logo.svg'
+import logo from '../../../assets/images/logo.svg'
 
 function HomepageNavbar() {
     return (
-        <Navbar bg="transparent" variant="light" expand="md">
+        <Navbar className="bg-transparent" variant="light" expand="md">
             <Container className="justify-content-center justify-content-md-between">
                     <Navbar.Brand href="#home">
                         <img
