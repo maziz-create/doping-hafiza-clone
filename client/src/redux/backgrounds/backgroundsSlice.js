@@ -3,15 +3,16 @@ import { createSlice } from '@reduxjs/toolkit';
 export const backgroundsSlice = createSlice({
     name: 'backgrounds',
     initialState: {
-        activeBackground: 'egitim'
+        activeBackground: 'tytayt'
     },
     reducers: {
         changeActiveBackground: (state, action) => {
-            //all bg types = tytayt, egitim, 2022yks, 2021yks
+            //all bg types = tytayt, egitim, yks2022, yks2021
             const bgType = action.payload;
             state.activeBackground = bgType;
         }
     }
 })
 
+export const { changeActiveBackground } = backgroundsSlice.actions;
 export default backgroundsSlice.reducer;
