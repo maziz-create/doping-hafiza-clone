@@ -10,24 +10,38 @@
     width: 1.9rem;
 }
 
-.homepage-carousel-1-div {
-    top: 8.5rem;
-    left: 4.5rem;
+.homepage-carousel-div-26rem {
+    top: 5rem;
+    left: 7rem;
     width: 26rem;
 }
 
-.homepage-carousel-1-div-heading {
+.homepage-carousel-div-28rem {
+    top: 5rem;
+    left: 7rem;
+    width: 28rem;
+}
+
+.homepage-carousel-div-text {
+    margin-top: 2rem;
+    font-weight: 600;
+}
+
+.homepage-carousel-div-heading-letter0 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-shadow: 3px 3px 0 rgb(34 34 34 / 20%);
+}
+
+.homepage-carousel-div-heading-letter4 {
     font-size: 3rem;
     font-weight: 700;
     letter-spacing: 4px;
     text-shadow: 3px 3px 0 rgb(34 34 34 / 20%);
 }
 
-.homepage-carousel-1-div-text {
-    margin-top: 2rem;
-}
-
-.homepage-carousel-1-div-button {
-    color: rgb(107, 3, 107);
+.homepage-carousel-2-div-button {
+    color: #fff;
     font-weight: 500;
 }
