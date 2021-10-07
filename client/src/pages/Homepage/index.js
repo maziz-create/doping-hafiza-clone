@@ -1,9 +1,9 @@
 import React from 'react'
 
 import Topbar from '../../components/Topbar'
-import HomepageNavbar from '../../pages/Homepage/HomepageNavbar'
-import HomepageCarousel from '../../pages/Homepage/HomepageCarousel'
-import HomepageBackground from '../../pages/Homepage/HomepageBackground'
+import HomepageNavbar from '../../components/HomepageNavbar'
+import HomepageCarousel from '../../components/HomepageCarousel'
+import HomepageBackground from '../../components/HomepageBackground'
 
 function Homepage() {
     return (

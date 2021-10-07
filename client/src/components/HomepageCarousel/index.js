@@ -2,14 +2,14 @@ import Carousel from 'react-bootstrap/Carousel'
 import Button from 'react-bootstrap/Button'
 
 import { useDispatch } from 'react-redux'
-import { changeActiveBackground } from '../../../redux/backgrounds/backgroundsSlice'
+import { changeActiveBackground } from '../../redux/backgrounds/backgroundsSlice'
 
 import './style.css'
 
-import home_slider_one from '../../../assets/images/home-slider-1.png'
-import home_slider_two from '../../../assets/images/home-slider-2.png'
-import home_slider_three from '../../../assets/images/home-slider-3.webp'
-import home_slider_four from '../../../assets/images/home-slider-4.png'
+import home_slider_one from '../../assets/images/home-slider-1.png'
+import home_slider_two from '../../assets/images/home-slider-2.png'
+import home_slider_three from '../../assets/images/home-slider-3.webp'
+import home_slider_four from '../../assets/images/home-slider-4.png'
 
 function HomepageCarousel() {
     const dispatch = useDispatch();
@@ -41,7 +41,7 @@ function HomepageCarousel() {
         >
             {/* Carousel 1 */}
             <Carousel.Item
-                style={{ height: '80vh' }}
+                style={{ height: '29.05rem' }}
             >
                 <div className="position-absolute homepage-carousel-div-26rem" style={{
                     color: '#fff',
@@ -62,14 +62,14 @@ function HomepageCarousel() {
                 </div>
                 <img
                     className="d-block ms-auto me-5"
-                    style={{ height: '27rem' }}
+                    style={{ height: '29.05rem' }}
                     src={home_slider_one}
                     alt="First slide"
                 />
             </Carousel.Item>
             {/* Carousel 2 */}
             <Carousel.Item
-                style={{ height: '80vh' }}
+                style={{ height: '29.05rem' }}
             >
                 <div className="position-absolute homepage-carousel-div-26rem" style={{
                     color: '#fff',
@@ -95,7 +95,7 @@ function HomepageCarousel() {
             </Carousel.Item>
             {/* Carousel 3 */}
             <Carousel.Item
-                style={{ height: '80vh' }}
+                style={{ height: '29.05rem' }}
             >
                 <div className="position-absolute homepage-carousel-div-28rem" style={{
                     color: '#fff',
@@ -120,7 +120,7 @@ function HomepageCarousel() {
             </Carousel.Item>
             {/* Carousel 4 */}
             <Carousel.Item
-                style={{ height: '80vh' }}
+                style={{ height: '29.05rem' }}
             >
                 <div className="position-absolute homepage-carousel-div-28rem" style={{
                     color: '#fff',

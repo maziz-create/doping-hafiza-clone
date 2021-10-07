@@ -1,13 +1,12 @@
 //backgrounds
-import yks2021 from '../../../assets/backgrounds/yks2021-bg.jpg'
-import mainSlider from '../../../assets/backgrounds/mainSlider.png'
+import yks2021 from '../../assets/backgrounds/yks2021-bg.jpg'
 
 import { useSelector } from 'react-redux'
 
 function HomepageBackground() {
     const bg = useSelector(state => state.backgrounds.activeBackground);
 
-    console.log('bg =>', bg);
+    // console.log('bg =>', bg);
 
     const setBackground = () => {
         if (bg === 'yks2021') {
@@ -30,7 +29,7 @@ function HomepageBackground() {
     }
     return (
         <div style={{
-            height: '100vh',
+            height: '38.52rem',
             backgroundImage: `url(${setBackground()})`,
             background: `${setBackgroundColor()}`,
             zIndex: '-5',

@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav'
 import Container from 'react-bootstrap/Container'
 import Navbar from 'react-bootstrap/Navbar'
 
-import logo from '../../../assets/images/logo.svg'
+import logo from '../../assets/images/logo.svg'
 
 function HomepageNavbar() {
     return (
