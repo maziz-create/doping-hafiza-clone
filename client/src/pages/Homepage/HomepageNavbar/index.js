@@ -19,21 +19,24 @@ function HomepageNavbar() {
                     />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
-                <Navbar.Collapse id="navbarScroll">
+                <Navbar.Collapse
+                    id="navbarScroll"
+                >
                     <Nav
                         color="black"
                         style={{
                             fontSize: '.9rem',
                             fontWeight: 'bold',
+                            width: '100%'
                         }}
-                        className="text-center"
+                        className="text-center justify-content-end"
                     >
-                        <Nav.Link href="#home">Eğitim Paketlerimiz</Nav.Link>
-                        <Nav.Link href="#features">Örnek Videolar</Nav.Link>
-                        <Nav.Link href="#pricing">Yorumlar & Başarılarımız</Nav.Link>
-                        <Nav.Link className="d-md-none d-lg-inline bg-md-success" href="#x">Yardım</Nav.Link>
-                        <Nav.Link className="d-md-none d-lg-inline" href="#y">Biz Kimiz</Nav.Link>
-                        <Nav.Link className="d-md-none d-xl-inline" href="#z">Bize Ulaşın</Nav.Link>
+                        <Nav.Link className="mx-2" href="#home">Eğitim Paketlerimiz</Nav.Link>
+                        <Nav.Link className="mx-2" href="#features">Örnek Videolar</Nav.Link>
+                        <Nav.Link className="mx-2" href="#pricing">Yorumlar & Başarılarımız</Nav.Link>
+                        <Nav.Link className="mx-2 d-md-none d-lg-inline" href="#x">Yardım</Nav.Link>
+                        <Nav.Link className="mx-2 d-md-none d-lg-inline" href="#y">Biz Kimiz</Nav.Link>
+                        <Nav.Link className="mx-2 d-md-none d-xl-inline" href="#z">Bize Ulaşın</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
