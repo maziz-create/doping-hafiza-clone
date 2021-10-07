@@ -1,0 +1,46 @@
+.topbar {
+    height: 42px;
+    background-color: rgba(0, 0, 0, .3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    word-spacing: 0;
+}
+
+/* contacts */
+
+.contacts {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 75px;
+}
+
+.contact {
+    margin-right: 33px;
+    display: flex;
+}
+
+.contact p {
+    margin-bottom: 0;
+}
+
+.icon {
+    margin-right: 7px;
+}
+
+/* social medias */
+
+.social-medias {
+    display: flex;
+    justify-content: start;
+}
+
+.social-media-icon {
+    margin-right: 20px;
+}
+
+.social-media-icon:last-child {
+    margin-right: 75px;
+}
