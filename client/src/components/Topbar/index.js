@@ -1,5 +1,19 @@
 import React from 'react'
 
+import {
+    FaFacebookF,
+    FaInstagram,
+    FaTwitter,
+    FaYoutube,
+    FaTelegramPlane,
+    FaWhatsapp,
+    FaPhoneVolume,
+} from "react-icons/fa";
+
+import { RiEnglishInput } from "react-icons/ri";
+
+import { MdEmail } from "react-icons/md";
+
 import './style.css'
 
 
@@ -8,17 +22,17 @@ function Topbar() {
         <div className="topbar mb-3">
             <div className="contacts">
                 <div className="contact wp">
-                    <div className="icon">
-                        Icon
-                    </div>
+                    <p className="icon fs-5 mb-1">
+                        <FaWhatsapp />
+                    </p>
 
                     <p>
                         0 533 236 20 05
                     </p>
                 </div>
                 <div className="contact phone">
-                    <div className="icon">
-                        Icon
+                    <div className="icon fs-5 mb-1">
+                        <FaPhoneVolume />
                     </div>
 
                     <p>
@@ -26,8 +40,8 @@ function Topbar() {
                     </p>
                 </div>
                 <div className="contact email">
-                    <div className="icon">
-                        Icon
+                    <div className="icon fs-5 mb-1">
+                        <MdEmail />
                     </div>
                     <p>
                         info@dopinghafiza.com
@@ -37,22 +51,22 @@ function Topbar() {
 
             <div className="social-medias">
                 <div className="social-media-icon">
-                    Icon
+                    <FaFacebookF />
                 </div>
                 <div className="social-media-icon">
-                    Icon
+                    <FaInstagram />
                 </div>
                 <div className="social-media-icon">
-                    Icon
+                    <FaTwitter />
                 </div>
                 <div className="social-media-icon">
-                    Icon
+                    <FaYoutube />
                 </div>
                 <div className="social-media-icon">
-                    Icon
+                    <FaTelegramPlane />
                 </div>
                 <div className="social-media-icon">
-                    Icon
+                    <RiEnglishInput />
                 </div>
             </div>
         </div>
