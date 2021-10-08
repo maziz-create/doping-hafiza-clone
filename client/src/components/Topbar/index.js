@@ -19,7 +19,7 @@ import './style.css'
 
 function Topbar() {
     return (
-        <div className="topbar mb-3">
+        <div className="topbar mb-3 d-none d-xl-flex">
             <div className="contacts">
                 <div className="contact wp">
                     <p className="icon fs-5 mb-1">
@@ -50,22 +50,22 @@ function Topbar() {
             </div>
 
             <div className="social-medias">
-                <div className="social-media-icon">
+                <div className="fs-5 social-media-icon">
                     <FaFacebookF />
                 </div>
-                <div className="social-media-icon">
+                <div className="fs-5 social-media-icon">
                     <FaInstagram />
                 </div>
-                <div className="social-media-icon">
+                <div className="fs-5 social-media-icon">
                     <FaTwitter />
                 </div>
-                <div className="social-media-icon">
+                <div className="fs-5 social-media-icon">
                     <FaYoutube />
                 </div>
-                <div className="social-media-icon">
+                <div className="fs-5 social-media-icon">
                     <FaTelegramPlane />
                 </div>
-                <div className="social-media-icon">
+                <div className="fs-5 social-media-icon">
                     <RiEnglishInput />
                 </div>
             </div>
