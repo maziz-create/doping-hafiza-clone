@@ -3,17 +3,11 @@
 }
 
 .carousel-control-prev {
-    left: -5rem;
+    width: 1.9rem;
 }
 
 .carousel-control-next {
     width: 1.9rem;
-}
-
-.homepage-carousel-div-26rem {
-    top: 5rem;
-    left: 7rem;
-    width: 26rem;
 }
 
 .homepage-carousel-div-28rem {
@@ -44,4 +38,49 @@
 .homepage-carousel-2-div-button {
     color: #fff;
     font-weight: 500;
+}
+
+/* responsive */
+
+@media screen and (max-width: 991px) {
+    .carouselItem {
+        height: 40rem;
+    }
+
+    .carouselItemDiv-26 {
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        top: 5rem;
+        left: 7rem;
+        width: 26rem;
+    }
+
+    .homepage-carousel-div-heading-letter4 {
+        font-size: 2.5rem;
+    }
+
+    .carouselItem-1-ImgDiv img {
+        height: 22rem;
+        margin: 2rem auto 2rem auto !important;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .carouselItem {
+        height: 29.05rem;
+    }
+
+    .carouselItemDiv-26 {
+        position: absolute;
+        top: 5rem;
+        left: 7rem;
+        width: 26rem;
+    }
+
+    .carouselItem-1-ImgDiv img {
+        margin-left: auto;
+        height: 27rem;
+    }
 }
