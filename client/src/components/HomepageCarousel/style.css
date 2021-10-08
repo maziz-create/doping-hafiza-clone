@@ -113,7 +113,8 @@
 
     .carouselItem-1-ImgDiv img,
     .carouselItem-2-ImgDiv img,
-    .carouselItem-3-ImgDiv img
+    .carouselItem-3-ImgDiv img,
+    .carouselItem-4-ImgDiv img
     {
         margin-left: auto;
         height: 27rem;
