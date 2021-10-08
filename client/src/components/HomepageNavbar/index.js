@@ -4,9 +4,14 @@ import Nav from 'react-bootstrap/Nav'
 import Container from 'react-bootstrap/Container'
 import Navbar from 'react-bootstrap/Navbar'
 
+import { useDispatch } from 'react-redux'
+import { changeBackgroundHeightForMobile } from '../../redux/backgrounds/backgroundsSlice'
+
 import logo from '../../assets/images/logo.svg'
 
 function HomepageNavbar() {
+    const dispatch = useDispatch();
+
     return (
         <Navbar className="bg-transparent" variant="dark" expand="md">
             <Container className="justify-content-center justify-content-md-between">
@@ -18,7 +23,7 @@ function HomepageNavbar() {
                         className="d-inline-block align-top"
                     />
                 </Navbar.Brand>
-                <Navbar.Toggle aria-controls="navbarScroll" />
+                <Navbar.Toggle onClick={() => dispatch(changeBackgroundHeightForMobile('65rem'))} aria-controls="navbarScroll" />
                 <Navbar.Collapse
                     id="navbarScroll"
                 >
