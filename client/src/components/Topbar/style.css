@@ -6,6 +6,7 @@
     align-items: center;
     color: #fff;
     word-spacing: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* contacts */
@@ -20,6 +21,7 @@
 .contact {
     margin-right: 33px;
     display: flex;
+    align-items: center;
 }
 
 .contact p {
@@ -38,7 +40,7 @@
 }
 
 .social-media-icon {
-    margin-right: 20px;
+    margin-right: 25px;
 }
 
 .social-media-icon:last-child {
