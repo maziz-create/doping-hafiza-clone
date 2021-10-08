@@ -7,8 +7,10 @@ import { useSelector } from 'react-redux'
 
 function HomepageBackground() {
     const bg = useSelector(state => state.backgrounds.activeBackground);
+    const bgHeight = useSelector(state => state.backgrounds.activeBackgroundHeight);
 
     // console.log('bg =>', bg);
+    // console.log('bgHeight =>', bgHeight);
 
     const setBackground = () => {
         if (bg === 'yks2021') {
@@ -29,12 +31,14 @@ function HomepageBackground() {
                 144deg, rgb(1, 181, 211) 0%, rgb(3, 11, 53) 90%)`;
         }
     }
+
     return (
         <div
             className="sliceBackground"
             style={{
                 backgroundImage: `url(${setBackground()})`,
                 background: `${setBackgroundColor()}`,
+                height: `${bgHeight}`
             }}
         >
 
