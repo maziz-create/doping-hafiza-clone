@@ -2,14 +2,14 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const winWidth = window.innerWidth;
 
-const mobileBackgroundWidth = '38.5rem'
-const desktopBackgroundWidth = '47rem'
+const mobileBackgroundHeight = '38.5rem'
+const desktopBackgroundHeight = '47rem'
 
 export const backgroundsSlice = createSlice({
     name: 'backgrounds',
     initialState: {
         activeBackground: 'tytayt',
-        activeBackgroundHeight: `${winWidth > 767 ? mobileBackgroundWidth : desktopBackgroundWidth}`,
+        activeBackgroundHeight: `${winWidth > 767 ? mobileBackgroundHeight : desktopBackgroundHeight}`,
     },
     reducers: {
         changeActiveBackground: (state, action) => {
@@ -20,10 +20,10 @@ export const backgroundsSlice = createSlice({
         changeBackgroundHeightForMobile: (state, action) => {
             // console.log('şu anki bg height => ', state.activeBackgroundHeight);
             const bgHeight = action.payload;
-            if (state.activeBackgroundHeight === desktopBackgroundWidth) {
+            if (state.activeBackgroundHeight === desktopBackgroundHeight) {
                 state.activeBackgroundHeight = bgHeight;
             } else {
-                state.activeBackgroundHeight = desktopBackgroundWidth;
+                state.activeBackgroundHeight = desktopBackgroundHeight;
             }
             // console.log('bg height değişti => ', state.activeBackgroundHeight);
         }
