@@ -1,6 +1,8 @@
 //backgrounds
 import yks2021 from '../../assets/backgrounds/yks2021-bg.jpg'
 
+import './style.css'
+
 import { useSelector } from 'react-redux'
 
 function HomepageBackground() {
@@ -28,14 +30,14 @@ function HomepageBackground() {
         }
     }
     return (
-        <div style={{
-            height: '38.52rem',
-            backgroundImage: `url(${setBackground()})`,
-            background: `${setBackgroundColor()}`,
-            zIndex: '-5',
-            position: 'absolute',
-            width: '100%',
-        }}>
+        <div
+            className="sliceBackground"
+            style={{
+                backgroundImage: `url(${setBackground()})`,
+                background: `${setBackgroundColor()}`,
+            }}
+        >
+
         </div>
     )
 }
