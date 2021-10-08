@@ -1,3 +1,7 @@
+.carouselItem {
+    background-color: transparent;
+}
+
 .carousel-indicators {
     bottom: -2rem;
 }
@@ -10,32 +14,26 @@
     width: 1.9rem;
 }
 
-.homepage-carousel-div-28rem {
-    top: 5rem;
-    left: 7rem;
-    width: 28rem;
-}
-
-.homepage-carousel-div-text {
+.carouselItemDiv-text {
     margin-top: 2rem;
     font-weight: 600;
 }
 
-.homepage-carousel-div-heading-letter0 {
+.carouselItemDiv-heading-letter0 {
     font-size: 3rem;
     font-weight: 700;
     letter-spacing: 0;
     text-shadow: 3px 3px 0 rgb(34 34 34 / 20%);
 }
 
-.homepage-carousel-div-heading-letter4 {
+.carouselItemDiv-heading-letter4 {
     font-size: 3rem;
     font-weight: 700;
     letter-spacing: 4px;
     text-shadow: 3px 3px 0 rgb(34 34 34 / 20%);
 }
 
-.homepage-carousel-2-div-button {
+.carouselItemDivButton {
     color: #fff;
     font-weight: 500;
 }
@@ -57,12 +55,39 @@
         width: 26rem;
     }
 
-    .homepage-carousel-div-heading-letter4 {
+    .carouselItemDiv-28 {
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        top: 5rem;
+        left: 7rem;
+        width: 28rem;
+    }
+
+    .carouselItemDiv-heading-letter4,
+    .carouselItemDiv-heading-letter0
+    {
         font-size: 2.5rem;
     }
 
     .carouselItem-1-ImgDiv img {
         height: 22rem;
+        margin: 2rem auto 2rem auto !important;
+    }
+
+    .carouselItem-2-ImgDiv img {
+        height: 16rem;
+        margin: 2rem auto 2rem auto !important;
+    }
+
+    .carouselItem-3-ImgDiv img {
+        height: 21.5rem;
+        margin: 2rem auto 2rem auto !important;
+    }
+
+    .carouselItem-4-ImgDiv img {
+        height: 15rem;
         margin: 2rem auto 2rem auto !important;
     }
 }
@@ -79,7 +104,17 @@
         width: 26rem;
     }
 
-    .carouselItem-1-ImgDiv img {
+    .carouselItemDiv-28 {
+        position: absolute;
+        top: 5rem;
+        left: 7rem;
+        width: 28rem;
+    }
+
+    .carouselItem-1-ImgDiv img,
+    .carouselItem-2-ImgDiv img,
+    .carouselItem-3-ImgDiv img
+    {
         margin-left: auto;
         height: 27rem;
     }
