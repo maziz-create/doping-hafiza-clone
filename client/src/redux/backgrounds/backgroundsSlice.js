@@ -9,7 +9,7 @@ export const backgroundsSlice = createSlice({
     name: 'backgrounds',
     initialState: {
         activeBackground: 'tytayt',
-        activeBackgroundHeight: `${winWidth > 767 ? mobileBackgroundHeight : desktopBackgroundHeight}`,
+        activeBackgroundHeight: `${winWidth > 991 ? mobileBackgroundHeight : desktopBackgroundHeight}`,
     },
     reducers: {
         changeActiveBackground: (state, action) => {
