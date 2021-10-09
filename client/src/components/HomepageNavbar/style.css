@@ -1,0 +1,49 @@
+.hiddenDropdown {
+    list-style-type: none;
+    padding-left: 0;
+    background-color: #fff;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-radius: 10px;
+    width: 255px;
+    margin-top: 15px;
+}   
+
+.hiddenDropdown:hover {
+    color: rgb(94, 107, 121);
+}
+
+.hiddenDropdown li {
+    padding: 15px 30px;
+    text-align: start;
+    position: relative;
+}
+
+/* .hiddenDropdown li::before {
+    content: "";
+    border-left: 6px solid red;
+    height: 52px;
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+
+.hiddenDropdown li:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.hiddenDropdownLi:hover .hiddenDropdownLink::before {
+    content: "";
+    border-left: 5px solid red;
+    height: 52px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hiddenDropdown li a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: rgb(94, 107, 121);
+    text-decoration: none;
+}

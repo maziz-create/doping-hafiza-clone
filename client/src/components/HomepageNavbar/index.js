@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './style.css'
+
 import Nav from 'react-bootstrap/Nav'
 import Container from 'react-bootstrap/Container'
 import Navbar from 'react-bootstrap/Navbar'
@@ -36,7 +38,32 @@ function HomepageNavbar() {
                         }}
                         className="text-center justify-content-end"
                     >
-                        <Nav.Link className="mx-2" href="#home">Eğitim Paketlerimiz</Nav.Link>
+                        <Nav.Link className="mx-2" style={{ textAlign: 'end' }} href="#home">
+                            Eğitim Paketlerimiz
+                            <ul className="hiddenDropdown">
+                                <li className="hiddenDropdownLi">
+                                    <a className="hiddenDropdownLink" href="#">YKS 2022</a>
+                                </li>
+                                <li className="hiddenDropdownLi">
+                                    <a className="hiddenDropdownLink" href="#">YKS 2022</a>
+                                </li>
+                                <li className="hiddenDropdownLi">
+                                    <a className="hiddenDropdownLink" href="#">YKS 2022</a>
+                                </li>
+                                <li className="hiddenDropdownLi">
+                                    <a className="hiddenDropdownLink" href="#">YKS 2022</a>
+                                </li>
+                                <li className="hiddenDropdownLi">
+                                    <a className="hiddenDropdownLink" href="#">YKS 2022</a>
+                                </li>
+                                <li className="hiddenDropdownLi">
+                                    <a className="hiddenDropdownLink" href="#">YKS 2022</a>
+                                </li>
+                                <li className="hiddenDropdownLi">
+                                    <a className="hiddenDropdownLink" href="#">YKS 2022</a>
+                                </li>
+                            </ul>
+                        </Nav.Link>
                         <Nav.Link className="mx-2" href="#features">Örnek Videolar</Nav.Link>
                         <Nav.Link className="mx-2" href="#pricing">Yorumlar & Başarılarımız</Nav.Link>
                         <Nav.Link className="mx-2 d-md-none d-lg-inline" href="#x">Yardım</Nav.Link>
