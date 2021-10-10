@@ -7,10 +7,12 @@
     border-radius: 10px;
     width: 255px;
     margin-top: 15px;
-    position: relative;
+    position: absolute;
+    top: 1.7rem;
+    right: 0;
+    z-index: 5;
     animation: header-sub-menu-in ease-out 200ms;
-    /* display: none; */
-}   
+}
 
 /* header sub menu arrow */
 .hiddenDropdown::before {
@@ -34,6 +36,7 @@
 
 .hiddenDropdown li {
     padding: 15px 30px;
+    cursor: pointer;
     text-align: start;
     position: relative;
     overflow: hidden;
