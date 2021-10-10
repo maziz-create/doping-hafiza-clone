@@ -8,26 +8,43 @@
     width: 255px;
     margin-top: 15px;
     position: absolute;
-    top: 1.7rem;
-    right: 0;
     z-index: 5;
-    animation: header-sub-menu-in ease-out 200ms;
+    
+    animation: header-sub-menu-in ease-out 300ms;
+    /* animation: header-sub-menu-out ease-out 300ms;  aktif class ekleyip kaldırabilmek gerekiyor.
+    aynı class'a ait bir şeyde hem in hem out animation kullanılamaz. birisi varken diğeri olmamalı...
+    */
+}
+
+.positionForOrnekVideolar {
+    top: 2.6rem;
+    left: 20rem;
+}
+
+.positionForBizeUlasin {
+    top: 2.6rem;
+    right: 11rem;
 }
 
 /* header sub menu arrow */
 .hiddenDropdown::before {
     content: "";
     display: block;
-    position: absolute;
-    top: -5px;
+    position: absolute; 
+    top: -3.5px;
     right: 45px;
     width: 30px;
     height: 30px;
-    animation: header-sub-menu-arrow-in ease-out 200ms;
-    transform: rotate(-50deg) skewX(-10deg);
-    transition: transform ease-in-out var(200ms);
     background-color: #fff;
     border-top-right-radius: 5px;
+
+    transform: rotate(-50deg) skewX(-10deg);
+    transition: transform ease-in-out var(200ms);
+
+    animation: header-sub-menu-arrow-in ease-out 200ms;
+    /* animation: header-sub-menu-arrow-out ease-out 200ms;  aktif class ekleyip kaldırabilmek gerekiyor.
+    aynı class'a ait bir şeyde hem in hem out animation kullanılamaz. birisi varken diğeri olmamalı...
+    */
 }
 
 .hiddenDropdown:hover {
@@ -84,6 +101,15 @@
     }
  }
 
+ @keyframes header-sub-menu-arrow-out {
+    0% {
+       top: -5px;
+    }
+    100% {
+       top: 6px;
+    }
+ }
+
  @keyframes header-sub-menu-in {
     0% {
        transform: rotateX(-12deg);
@@ -93,5 +119,17 @@
     100% {
        transform: rotateX(0deg);
        opacity: 1;
+    }
+ }
+
+ @keyframes header-sub-menu-out {
+    0% {
+       transform: rotateX(0deg);
+       opacity: 1;
+    }
+ 
+    100% {
+       transform: rotateX(-12deg);
+       opacity: 0;
     }
  }
