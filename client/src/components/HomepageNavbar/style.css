@@ -8,8 +8,11 @@
     width: 255px;
     margin-top: 15px;
     position: relative;
+    animation: header-sub-menu-in ease-out 200ms;
+    /* display: none; */
 }   
 
+/* header sub menu arrow */
 .hiddenDropdown::before {
     content: "";
     display: block;
@@ -18,8 +21,9 @@
     right: 45px;
     width: 30px;
     height: 30px;
-    /* transition: transform ease-in-out var(--sub-menu-animation-duration); */
+    animation: header-sub-menu-arrow-in ease-out 200ms;
     transform: rotate(-50deg) skewX(-10deg);
+    transition: transform ease-in-out var(200ms);
     background-color: #fff;
     border-top-right-radius: 5px;
 }
@@ -67,3 +71,24 @@
     background-color: #CC171B;
     transform: translateX(0);
 }
+
+@keyframes header-sub-menu-arrow-in {
+    0% {
+       top: 6px;
+    }
+    100% {
+       top: -5px;
+    }
+ }
+
+ @keyframes header-sub-menu-in {
+    0% {
+       transform: rotateX(-12deg);
+       opacity: 0;
+    }
+ 
+    100% {
+       transform: rotateX(0deg);
+       opacity: 1;
+    }
+ }
