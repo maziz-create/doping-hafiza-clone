@@ -1,4 +1,4 @@
-import React from 'react'
+import { useState } from 'react'
 
 import './style.css'
 
@@ -13,6 +13,8 @@ import logo from '../../assets/images/logo.svg'
 
 function HomepageNavbar() {
     const dispatch = useDispatch();
+
+    const [style, setStyle] = useState({ display: 'none'})
 
     return (
         <Navbar className="bg-transparent" variant="dark" expand="md">
@@ -38,9 +40,24 @@ function HomepageNavbar() {
                         }}
                         className="text-center justify-content-end"
                     >
-                        <Nav.Link className="mx-2" style={{ textAlign: 'end' }} href="#home">
-                            Eğitim Paketlerimiz
-                            <ul className="hiddenDropdown">
+                        <Nav.Link
+                            className="mx-2"
+                            style={{
+                                textAlign: 'end',
+                                position: 'relative',
+                                paddingBottom: '12px',
+                                cursor: 'default'
+                            }}
+                            href="#home"
+                            onMouseOver={e => {
+                                setStyle({ display: 'block' });
+                            }}
+                            onMouseLeave={e => {
+                                setStyle({ display: 'none' })
+                            }}
+                        >
+                            <div style={{ cursor: 'pointer' }}>Eğitim Paketlerimiz</div>
+                            <ul style={style} className="hiddenDropdown">
                                 <li className="hiddenDropdownLi">
                                     <a className="hiddenDropdownLink" href="#">YKS 2022</a>
                                 </li>
@@ -65,7 +82,7 @@ function HomepageNavbar() {
                             </ul>
                         </Nav.Link>
                         <Nav.Link className="mx-2" href="#features">Örnek Videolar</Nav.Link>
-                        <Nav.Link className="mx-2" href="#pricing">Yorumlar & Başarılarımız</Nav.Link>
+                        <Nav.Link className="mx-2 d-none d-lg-inline" href="#pricing">Yorumlar & Başarılarımız</Nav.Link>
                         <Nav.Link className="mx-2 d-md-none d-lg-inline" href="#x">Yardım</Nav.Link>
                         <Nav.Link className="mx-2 d-md-none d-lg-inline" href="#y">Biz Kimiz</Nav.Link>
                         <Nav.Link className="mx-2 d-md-none d-xl-inline" href="#z">Bize Ulaşın</Nav.Link>
