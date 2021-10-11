@@ -31,6 +31,21 @@ function HomepageNavbar() {
         cursor: 'default'
     }
 
+    //window width değiştiği an yeni değerini dispatch etmek istiyoruz.
+    const updateSize = () => {
+        if (window.innerWidth > 1200) {
+            // console.log("update ediliyor 47 rem");
+            dispatch(changeBackgroundHeightForMobile('38.5rem'))
+        } else if (window.innerWidth > 991 && window.innerWidth < 1200) {
+            dispatch(changeBackgroundHeightForMobile('35rem'))
+        } else {
+            // console.log("update ediliyor 38.5 rem");
+            dispatch(changeBackgroundHeightForMobile('46rem'))
+        }
+    }
+    //window.onresize = functionRef;
+    window.onresize = updateSize;
+
     return (
         <Navbar className="bg-transparent" variant="dark" expand="md">
             <Container className="justify-content-center justify-content-md-between">
