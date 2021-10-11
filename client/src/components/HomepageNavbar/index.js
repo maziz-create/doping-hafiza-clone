@@ -6,13 +6,14 @@ import Nav from 'react-bootstrap/Nav'
 import Container from 'react-bootstrap/Container'
 import Navbar from 'react-bootstrap/Navbar'
 
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { changeBackgroundHeightForMobile } from '../../redux/backgrounds/backgroundsSlice'
 
 import logo from '../../assets/images/logo.svg'
 
 function HomepageNavbar() {
     const dispatch = useDispatch();
+    const activeBackgroundHeight = useSelector(state => state.backgrounds.activeBackgroundHeight);
 
     const [styleOrnekVideolar, setStyleOrnekVideolar] = useState({ display: 'none' });
     const [styleBizeUlasin, setStyleBizeUlasin] = useState({ display: 'none' });
@@ -34,12 +35,12 @@ function HomepageNavbar() {
     //window width değiştiği an yeni değerini dispatch etmek istiyoruz.
     const updateSize = () => {
         if (window.innerWidth > 1200) {
-            // console.log("update ediliyor 47 rem");
+            // console.log("update ediliyor 38.5 rem");
             dispatch(changeBackgroundHeightForMobile('38.5rem'))
         } else if (window.innerWidth > 991 && window.innerWidth < 1200) {
             dispatch(changeBackgroundHeightForMobile('35rem'))
         } else {
-            // console.log("update ediliyor 38.5 rem");
+            // console.log("update ediliyor 46 rem");
             dispatch(changeBackgroundHeightForMobile('46rem'))
         }
     }
@@ -57,7 +58,13 @@ function HomepageNavbar() {
                         className="d-inline-block align-top"
                     />
                 </Navbar.Brand>
-                <Navbar.Toggle onClick={() => dispatch(changeBackgroundHeightForMobile('65rem'))} aria-controls="navbarScroll" />
+                <Navbar.Toggle onClick={() =>
+                    activeBackgroundHeight === '58rem'
+                        ? updateSize()
+                        : dispatch(changeBackgroundHeightForMobile('58rem'))
+                }
+                    aria-controls="navbarScroll"
+                />
                 <Navbar.Collapse
                     id="navbarScroll"
                 >
