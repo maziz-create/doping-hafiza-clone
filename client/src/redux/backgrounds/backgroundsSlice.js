@@ -20,11 +20,7 @@ export const backgroundsSlice = createSlice({
         changeBackgroundHeightForMobile: (state, action) => {
             // console.log('şu anki bg height => ', state.activeBackgroundHeight);
             const bgHeight = action.payload;
-            if (state.activeBackgroundHeight === desktopBackgroundHeight) {
-                state.activeBackgroundHeight = bgHeight;
-            } else {
-                state.activeBackgroundHeight = desktopBackgroundHeight;
-            }
+            state.activeBackgroundHeight = bgHeight;
             // console.log('bg height değişti => ', state.activeBackgroundHeight);
         }
     }
