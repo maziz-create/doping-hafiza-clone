@@ -18,6 +18,19 @@ function HomepageNavbar() {
     const [styleBizeUlasin, setStyleBizeUlasin] = useState({ display: 'none' });
     const visibilityHiddenDropdown = window.innerWidth > 991 ? true : false;
 
+    // navbarCollapse aktif olduktan sonra text align sıkıntı oluşturuyor.
+    const navLinkStyle = visibilityHiddenDropdown ? {
+        textAlign: 'end',
+        position: 'relative',
+        paddingBottom: '12px',
+        cursor: 'default'
+    } : {
+        textAlign: 'center',
+        position: 'relative',
+        paddingBottom: '12px',
+        cursor: 'default'
+    }
+
     return (
         <Navbar className="bg-transparent" variant="dark" expand="md">
             <Container className="justify-content-center justify-content-md-between">
@@ -45,12 +58,7 @@ function HomepageNavbar() {
                         {/* EĞİTİM PAKETLERİMİZ VE HİDDEN NAVBAR */}
                         <Nav.Link
                             className="mx-2"
-                            style={{
-                                textAlign: 'end',
-                                position: 'relative',
-                                paddingBottom: '12px',
-                                cursor: 'default'
-                            }}
+                            style={navLinkStyle}
                             href="#home"
                             onMouseOver={e => {
                                 setStyleOrnekVideolar({ display: 'block' });
@@ -105,12 +113,7 @@ function HomepageNavbar() {
                         {/* BİZ KİMİZ VE HİDDEN NAVBAR */}
                         <Nav.Link
                             className="mx-2 d-md-none d-lg-inline"
-                            style={{
-                                textAlign: 'end',
-                                position: 'relative',
-                                paddingBottom: '12px',
-                                cursor: 'default'
-                            }}
+                            style={navLinkStyle}
                             href="#gg"
                             onMouseOver={e => {
                                 setStyleBizeUlasin({ display: 'block' });
