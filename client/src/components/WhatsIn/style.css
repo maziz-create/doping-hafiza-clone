@@ -1,0 +1,35 @@
+.banner-list-item {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-icon {
+    margin-right: 1.2rem;
+    background-color: #0C0058;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-icon svg {
+    width: 4.5rem;
+    height: 40px;
+}
+
+.item-text {
+    color: #3A4759;
+    font-weight: 600;
+    flex: 1 1 auto;
+    font-size: 16px;
+    line-height: 24px;
+}

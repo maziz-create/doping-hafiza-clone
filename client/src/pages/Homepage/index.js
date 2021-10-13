@@ -7,6 +7,7 @@ import HomepageBackground from '../../components/HomepageBackground'
 
 // Homepage Content
 import ExamInformation from '../../components/ExamInformation'
+import WhatsIn from '../../components/WhatsIn'
 
 import Container from 'react-bootstrap/Container'
 
@@ -21,6 +22,7 @@ function Homepage() {
 
             <Container style={{ position: 'relative' }}>
                 <ExamInformation />
+                <WhatsIn />
             </Container>
         </div>
     )
