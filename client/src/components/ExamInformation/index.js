@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row'
 
 //components
 import ProductButtons from '../ProductButtons/'
+import ContentTitle from '../ContentTitle'
 
 //images
 import mockup from '../../assets/images/mockup.webp'
@@ -16,30 +17,7 @@ function ExamInformation() {
         <div className="d-none d-md-inline-block" style={{ paddingTop: '4.5rem', marginBottom: '1rem' }}>
             <Row>
                 <div className="col-lg-6">
-                    <div
-                        style={{
-                            fontSize: '10rem',
-                        }}
-                    >
-                        <h3
-                            className="fw-bold"
-                            style={{
-                                color: '#3A4759',
-                            }}
-                        >
-                            Sınavlara Hazırlanmanın
-                        </h3>
-                        <h2
-                            className="fw-bold"
-                            style={{
-                                color: '#CC171B',
-                                marginBottom: '2rem',
-                                fontSize: '2.5rem'
-                            }}
-                        >
-                            En Etkili Yolu!
-                        </h2>
-                    </div>
+                    <ContentTitle textTop="Sınavlara Hazırlanmanın" textBottom="En Etkili Yolu!" />
                     <div style={{ color: '#3A4759' }}>
                         <p>
                             YKS, LGS, KPSS, DGS ve ALES'e Doping Hafıza ile sistemli, kapsamlı ve verimli bir şekilde hazırlanmak ister misiniz?
