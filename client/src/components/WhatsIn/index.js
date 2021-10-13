@@ -24,10 +24,12 @@ import {
 
 function WhatsIn() {
     return (
-        <div style={{
+        <div className="whatsinDiv" style={{
             paddingTop: '4.5rem',
             marginBottom: '1rem',
+            position: 'relative',
         }}>
+            <div className="pattern"></div>
             <Container>
                 <Row>
                     <div className="col-lg-12">

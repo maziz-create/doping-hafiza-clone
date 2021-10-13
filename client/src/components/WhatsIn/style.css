@@ -1,3 +1,20 @@
+.whatsinDiv {
+    background-color: rgba(107, 147, 214, 0.05);
+}
+
+.pattern {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: min(430px, 90%);
+    height: min(430px, 90%);
+    background: url(../../assets/backgrounds/home-pattern.webp) no-repeat;
+    background-size: contain;
+    opacity: 0.60;
+}
+
 .banner-list-item {
     margin-top: 1rem;
     margin-bottom: 1rem;
