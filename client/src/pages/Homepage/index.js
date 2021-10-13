@@ -12,14 +12,14 @@ import Container from 'react-bootstrap/Container'
 
 function Homepage() {
     return (
-        <div style={{overflow: 'hidden'}}>
+        <div style={{ overflow: 'hidden' }}>
             <HomepageBackground />
             <Topbar />
             <HomepageNavbar />
             <HomepageCarousel />
             {/* -- */}
 
-            <Container style={{position: 'relative'}}>
+            <Container style={{ position: 'relative' }}>
                 <ExamInformation />
             </Container>
         </div>

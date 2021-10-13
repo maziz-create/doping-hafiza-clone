@@ -31,7 +31,7 @@ function HomepageCarousel() {
     }
 
     return (
-        <div>
+        <div style={{ marginBottom: '1rem' }}>
             <Carousel
                 className="w-100 position-relative"
                 variant="light"
