@@ -9,7 +9,6 @@ import HomepageBackground from '../../components/HomepageBackground'
 import ExamInformation from '../../components/ExamInformation'
 import WhatsIn from '../../components/WhatsIn'
 
-import Container from 'react-bootstrap/Container'
 
 function Homepage() {
     return (
@@ -20,10 +19,8 @@ function Homepage() {
             <HomepageCarousel />
             {/* -- */}
 
-            <Container style={{ position: 'relative' }}>
-                <ExamInformation />
-                <WhatsIn />
-            </Container>
+            <ExamInformation />
+            <WhatsIn />
         </div>
     )
 }
