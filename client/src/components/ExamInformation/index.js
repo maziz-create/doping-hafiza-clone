@@ -13,7 +13,7 @@ import './style.css'
 
 function ExamInformation() {
     return (
-        <div style={{ paddingTop: '5.5rem' }}>
+        <div className="d-none d-md-inline-block" style={{ paddingTop: '4.5rem' }}>
             <Row className="col-lg-6">
                 <div
                     style={{
