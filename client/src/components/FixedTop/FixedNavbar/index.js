@@ -113,7 +113,7 @@ function FixedNavbar({ scrollY }) {
                                     (
                                         <ul
                                             style={styleOrnekVideolar}
-                                            className="hiddenDropdown positionForOrnekVideolar"
+                                            className="hiddenDropdown positionForOrnekVideolarFixedNavbar"
                                             onMouseOver={e => {
                                                 setStyleOrnekVideolar({ display: 'block' });
                                             }}
@@ -168,7 +168,7 @@ function FixedNavbar({ scrollY }) {
                                     (
                                         <ul
                                             style={styleBizeUlasin}
-                                            className="hiddenDropdown positionForBizeUlasin"
+                                            className="hiddenDropdown positionForBizeUlasinFixedNavbar"
                                             onMouseOver={e => {
                                                 setStyleBizeUlasin({ display: 'block' });
                                             }}

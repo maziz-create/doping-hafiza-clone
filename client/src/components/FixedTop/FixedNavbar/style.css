@@ -64,13 +64,13 @@
     */
 }
 
-.positionForOrnekVideolar {
-    top: 2.6rem;
+.positionForOrnekVideolarFixedNavbar {
+    top: 4rem;
     left: 20rem;
 }
 
-.positionForBizeUlasin {
-    top: 2.6rem;
+.positionForBizeUlasinFixedNavbar {
+    top: 4rem;
     right: 11rem;
 }
 
