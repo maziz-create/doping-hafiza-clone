@@ -8,7 +8,7 @@ import HomepageBackground from '../../components/HomepageBackground'
 // Homepage Content
 import ExamInformation from '../../components/ExamInformation'
 import WhatsIn from '../../components/WhatsIn'
-import StickyTopbarNavbar from '../../components/StickyTopbarNavbar'
+import FixedTop from '../../components/FixedTop'
 
 
 function Homepage() {
@@ -31,7 +31,7 @@ function Homepage() {
             <HomepageNavbar />
             <HomepageCarousel />
             {/* -- */}
-            <StickyTopbarNavbar scrollY={scrollY} />
+            <FixedTop scrollY={scrollY} />
 
             <ExamInformation />
             <WhatsIn />
