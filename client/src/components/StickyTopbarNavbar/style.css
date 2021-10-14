@@ -1,0 +1,137 @@
+/* HomepageNavbar içindeki cssten kopyalanıp gerekli yerleri değiştirilmiştir. */
+
+.hiddenDropdown {
+    list-style-type: none;
+    padding-left: 0;
+    background-color: #fff;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-radius: 10px;
+    width: 255px;
+    margin-top: 15px;
+    position: absolute;
+    z-index: 5;
+    filter: drop-shadow(0 3px 10px rgba(58, 71, 89, 0.4));
+    
+    animation: header-sub-menu-in ease-out 300ms;
+    /* animation: header-sub-menu-out ease-out 300ms;  aktif class ekleyip kaldırabilmek gerekiyor.
+    aynı class'a ait bir şeyde hem in hem out animation kullanılamaz. birisi varken diğeri olmamalı...
+    */
+}
+
+.positionForOrnekVideolar {
+    top: 2.6rem;
+    left: 20rem;
+}
+
+.positionForBizeUlasin {
+    top: 2.6rem;
+    right: 11rem;
+}
+
+/* header sub menu arrow */
+.hiddenDropdown::before {
+    content: "";
+    display: block;
+    position: absolute; 
+    top: -3.5px;
+    right: 45px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-top-right-radius: 5px;
+
+    transform: rotate(-50deg) skewX(-10deg);
+    transition: transform ease-in-out var(200ms);
+
+    animation: header-sub-menu-arrow-in ease-out 200ms;
+    /* animation: header-sub-menu-arrow-out ease-out 200ms;  aktif class ekleyip kaldırabilmek gerekiyor.
+    aynı class'a ait bir şeyde hem in hem out animation kullanılamaz. birisi varken diğeri olmamalı...
+    */
+}
+
+.hiddenDropdown:hover {
+    color: rgb(94, 107, 121);
+}
+
+.hiddenDropdown li {
+    padding: 15px 30px;
+    cursor: pointer;
+    text-align: start;
+    position: relative;
+    overflow: hidden;
+    transition: all ease-in-out 300ms;
+}
+
+.hiddenDropdown li:hover {
+    background-color: rgb(241, 246, 249);
+}
+
+.hiddenDropdown li:hover .hiddenDropdownLink {
+    color: #CC171B;
+}
+
+.hiddenDropdown li a {
+    font-size: 14px;
+    color: rgb(94, 107, 121);
+    text-decoration: none;
+}
+.hiddenDropdown li a::before {
+    content: "";
+    display: block;
+    width: 5.5px;
+    height: 100%;
+    background-color: transparent;
+    transition: all ease-in-out 300ms;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+}
+
+.hiddenDropdown li:hover .hiddenDropdownLink::before {
+    background-color: #CC171B;
+    transform: translateX(0);
+}
+
+@keyframes header-sub-menu-arrow-in {
+    0% {
+       top: 6px;
+    }
+    100% {
+       top: -5px;
+    }
+ }
+
+ @keyframes header-sub-menu-arrow-out {
+    0% {
+       top: -5px;
+    }
+    100% {
+       top: 6px;
+    }
+ }
+
+ @keyframes header-sub-menu-in {
+    0% {
+       transform: rotateX(-12deg);
+       opacity: 0;
+    }
+ 
+    100% {
+       transform: rotateX(0deg);
+       opacity: 1;
+    }
+ }
+
+ @keyframes header-sub-menu-out {
+    0% {
+       transform: rotateX(0deg);
+       opacity: 1;
+    }
+ 
+    100% {
+       transform: rotateX(-12deg);
+       opacity: 0;
+    }
+ }
