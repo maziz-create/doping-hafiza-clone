@@ -30,24 +30,41 @@ function StickyTopbarNavbar({ scrollY }) {
     //sticky navbar için kodlar.
     const [scroll, setScroll] = useState(scrollY);
     const [styleFixed, setStyleFixed] = useState();
-    const [Display, setDisplay] = useState({ display: 'none' })
+    const [styleDisplay, setStyleDisplay] = useState({ display: 'none' })
 
     useEffect(() => {
         setScroll(scrollY);
         if (scroll > 590) {
             // Fixed = top için.
             setStyleFixed('top');
-            setDisplay({ display: 'block' });
+            setStyleDisplay({ display: 'block' });
         } else {
             setStyleFixed();
-            setDisplay({ display: 'none' });
+            setStyleDisplay({ display: 'none' });
         }
     }, [scrollY])
 
+    // /*
+    // BU KISIMLARI DAHA SONRA HALLEDECEĞİM ÇOK KARMAŞIK! ZATEN ANİMASYONLARIN ALAYI BÖYLE.
+    // scroll'un yerine göre üst dive class atayıp sileceğiz.
+    // bunu yaparken HomepageComponentten alınan scrollY'i kullanacağız.
+    // amaç => normalde header-down ya da header-up olmasın. 590 üstünde header-down oluşsun ve hep kalsın,
+    // 590 altında ise header-down silinsin, header-up oluşsun ve kısa bi süre sonra o da uçsun. 
+    // */
+    // const [classForAnimation, setClassForAnimation] = useState('header-up');
+    // useEffect(() => {
+    //     if (scrollY > 590) {
+    //         setClassForAnimation('header-down'); //animasyon için. css dosyasında mevcut
+    //     } else if (scrollY < 590 && classForAnimation === 'stickyNavbarDiv header-down') {
+    //         setClassForAnimation('header-up'); //animasyon için. css dosyasında mevcut
+    //     }
+    // }, [scrollY])
+
+
     return (
-        <div>
+        <div /*className={classForAnimation}*/>
             <Navbar
-                style={Display}
+                style={styleDisplay}
                 fixed={styleFixed}
                 className="bg-light p-4 stickyNavbar"
                 variant="light"

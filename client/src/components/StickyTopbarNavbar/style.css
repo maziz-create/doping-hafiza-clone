@@ -1,3 +1,47 @@
+.header-up {
+    animation: headerUp ease-in-out 300ms;
+}
+
+.header-down {
+    animation: headerDown ease-in-out 300ms;
+}
+
+@keyframes topbarDown {
+    0% {
+       transform: translateY(-100%);
+    }
+    100% {
+       transform: translateY(0);
+    }
+}
+
+@keyframes topbarUp {
+    0% {
+       transform: translateY(0);
+    }
+    100% {
+       transform: translateY(-100%);
+    }
+}
+ 
+@keyframes headerDown {
+    0% {
+       transform: translateY(calc(-100% - 50px));
+    }
+    100% {
+       transform: translateY(0);
+    }
+ }
+
+ @keyframes headerUp {
+    0% {
+       transform: translateY(0);
+    }
+    100% {
+       transform: translateY(calc(-100% - 50px));
+    }
+ }
+
 /* HomepageNavbar içindeki cssten kopyalanıp gerekli yerleri değiştirilmiştir. */
 
 .hiddenDropdown {
