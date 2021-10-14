@@ -8,6 +8,7 @@ import HomepageBackground from '../../components/HomepageBackground'
 // Homepage Content
 import ExamInformation from '../../components/ExamInformation'
 import WhatsIn from '../../components/WhatsIn'
+import StickyTopbarNavbar from '../../components/StickyTopbarNavbar'
 
 
 function Homepage() {
@@ -26,10 +27,11 @@ function Homepage() {
     return (
         <div style={{ overflow: 'hidden' }}>
             <HomepageBackground />
-            <Topbar scrollY={scrollY} />
-            <HomepageNavbar scrollY={scrollY} />
+            <Topbar />
+            <HomepageNavbar />
             <HomepageCarousel />
             {/* -- */}
+            <StickyTopbarNavbar scrollY={scrollY} />
 
             <ExamInformation />
             <WhatsIn />
