@@ -1,0 +1,18 @@
+/* Bootstraptan alınan butonu değiştirmek için. */
+.trainingsButtons button {
+    background-color: #EBF2F5;
+    color: rgba(58, 71, 89, 1);
+    font-weight: bold;
+    border: none;
+}
+
+.trainingsButtons button:hover,
+.trainingsButtons button:active,
+.trainingsButtons button:focus,
+.trainingsButtons button:focus:active,
+.trainingsButtons button:focus-visible {
+    background-color: #EBF2F5;
+    color: rgba(58, 71, 89, 1);
+    border: none;
+    box-shadow: none;
+}
