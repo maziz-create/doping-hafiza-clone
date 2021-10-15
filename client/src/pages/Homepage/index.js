@@ -9,6 +9,7 @@ import HomepageBackground from '../../components/HomepageBackground'
 import ExamInformation from '../../components/ExamInformation'
 import WhatsIn from '../../components/WhatsIn'
 import FixedTop from '../../components/FixedTop'
+import PreferredTrainings from '../../components/PreferredTrainings'
 
 
 function Homepage() {
@@ -30,11 +31,13 @@ function Homepage() {
             <Topbar />
             <HomepageNavbar />
             <HomepageCarousel />
-            {/* -- */}
-            <FixedTop scrollY={scrollY} />
+
+            <FixedTop scrollY={scrollY} /> {/* Fixed Topbar and Navbar */}
 
             <ExamInformation />
             <WhatsIn />
+            <PreferredTrainings />
+
         </div>
     )
 }
