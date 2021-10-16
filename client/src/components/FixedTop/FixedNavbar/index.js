@@ -77,7 +77,7 @@ function FixedNavbar({ scrollY }) {
     // useEffect(() => {
     //     if (scrollY > 590) {
     //         setClassForAnimation('header-down'); //animasyon için. css dosyasında mevcut
-    //     } else if (scrollY < 590 && classForAnimation === 'stickyNavbarDiv header-down') {
+    //     } else if (scrollY < 590 && classForAnimation === 'fixedNavbarDiv header-down') {
     //         setClassForAnimation('header-up'); //animasyon için. css dosyasında mevcut
     //     }
     // }, [scrollY])
@@ -89,7 +89,7 @@ function FixedNavbar({ scrollY }) {
                 <Navbar
                     style={styleDisplay}
                     fixed={styleFixed}
-                    className="bg-light p-4 stickyNavbar"
+                    className="bg-light p-4 pb-2 fixedNavbar"
                     variant="light"
                     expand="md"
                 >
