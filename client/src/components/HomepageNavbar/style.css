@@ -17,13 +17,13 @@
 }
 
 .positionForOrnekVideolar {
-    top: 2.6rem;
-    left: 20rem;
+    top: 2rem;
+    right: 0;
 }
 
 .positionForBizeUlasin {
-    top: 2.6rem;
-    right: 11rem;
+    top: 1.6rem;
+    right: -1rem;
 }
 
 /* header sub menu arrow */

@@ -22,12 +22,10 @@ function HomepageNavbar() {
     // navbarCollapse aktif olduktan sonra text align sıkıntı oluşturuyor.
     const navLinkStyle = visibilityHiddenDropdown ? {
         textAlign: 'end',
-        position: 'relative',
         paddingBottom: '12px',
         cursor: 'default'
     } : {
         textAlign: 'center',
-        position: 'relative',
         paddingBottom: '12px',
         cursor: 'default'
     }
@@ -55,7 +53,7 @@ function HomepageNavbar() {
                         style={{ filter: 'brightness(0) invert(1)' }}
                         alt=""
                         src={logo}
-                        className="d-inline-block align-top"
+                        className="d-inline-block"
                     />
                 </Navbar.Brand>
                 <Navbar.Toggle onClick={() =>
@@ -77,26 +75,21 @@ function HomepageNavbar() {
                         }}
                         className="text-center justify-content-end"
                     >
-                        {/* EĞİTİM PAKETLERİMİZ VE HİDDEN NAVBAR */}
-                        <Nav.Link
-                            className="mx-2"
-                            style={navLinkStyle}
-                            href="#home"
-                            onMouseOver={e => {
-                                setStyleOrnekVideolar({ display: 'block' });
-                            }}
-                            onMouseLeave={e => {
-                                setStyleOrnekVideolar({ display: 'none' })
+                        <ul
+                            style={{
+                                listStyleType: 'none',
+                                display: 'flex',
+                                justifyContent: 'end',
+                                alignItems: 'center',
+                                marginBottom: '0',
                             }}
                         >
-                            <div style={{ cursor: 'pointer' }}>Eğitim Paketlerimiz</div>
-                        </Nav.Link>
-                        {
-                            visibilityHiddenDropdown &&
-                            (
-                                <ul
-                                    style={styleOrnekVideolar}
-                                    className="hiddenDropdown positionForOrnekVideolar"
+                            {/* EĞİTİM PAKETLERİMİZ VE HİDDEN NAVBAR */}
+                            <li style={{ position: 'relative' }}>
+                                <Nav.Link
+                                    className="mx-2"
+                                    style={navLinkStyle}
+                                    href="#home"
                                     onMouseOver={e => {
                                         setStyleOrnekVideolar({ display: 'block' });
                                     }}
@@ -104,54 +97,61 @@ function HomepageNavbar() {
                                         setStyleOrnekVideolar({ display: 'none' })
                                     }}
                                 >
-                                    <li className="hiddenDropdownLi">
-                                        <a className="hiddenDropdownLink" href="#">YKS 2022</a>
-                                    </li>
-                                    <li className="hiddenDropdownLi">
-                                        <a className="hiddenDropdownLink" href="#">YKS 2022</a>
-                                    </li>
-                                    <li className="hiddenDropdownLi">
-                                        <a className="hiddenDropdownLink" href="#">YKS 2022</a>
-                                    </li>
-                                    <li className="hiddenDropdownLi">
-                                        <a className="hiddenDropdownLink" href="#">YKS 2022</a>
-                                    </li>
-                                    <li className="hiddenDropdownLi">
-                                        <a className="hiddenDropdownLink" href="#">YKS 2022</a>
-                                    </li>
-                                    <li className="hiddenDropdownLi">
-                                        <a className="hiddenDropdownLink" href="#">YKS 2022</a>
-                                    </li>
-                                    <li className="hiddenDropdownLi">
-                                        <a className="hiddenDropdownLink" href="#">YKS 2022</a>
-                                    </li>
-                                </ul>
-                            )
-                        }
-
-                        <Nav.Link className="mx-2" href="#features">Örnek Videolar</Nav.Link>
-                        <Nav.Link className="mx-2 d-none d-lg-inline" href="#pricing">Yorumlar & Başarılarımız</Nav.Link>
-                        <Nav.Link className="mx-2 d-md-none d-lg-inline" href="#x">Yardım</Nav.Link>
-                        {/* BİZ KİMİZ VE HİDDEN NAVBAR */}
-                        <Nav.Link
-                            className="mx-2 d-md-none d-lg-inline"
-                            style={navLinkStyle}
-                            href="#gg"
-                            onMouseOver={e => {
-                                setStyleBizeUlasin({ display: 'block' });
-                            }}
-                            onMouseLeave={e => {
-                                setStyleBizeUlasin({ display: 'none' })
-                            }}
-                        >
-                            <div style={{ cursor: 'pointer' }}>Biz Kimiz</div>
-                        </Nav.Link>
-                        {
-                            visibilityHiddenDropdown &&
-                            (
-                                <ul
-                                    style={styleBizeUlasin}
-                                    className="hiddenDropdown positionForBizeUlasin"
+                                    <span style={{ cursor: 'pointer' }}>Eğitim Paketlerimiz</span>
+                                </Nav.Link>
+                                {
+                                    visibilityHiddenDropdown &&
+                                    (
+                                        <ul
+                                            style={styleOrnekVideolar}
+                                            className="hiddenDropdown positionForOrnekVideolar"
+                                            onMouseOver={e => {
+                                                setStyleOrnekVideolar({ display: 'block' });
+                                            }}
+                                            onMouseLeave={e => {
+                                                setStyleOrnekVideolar({ display: 'none' })
+                                            }}
+                                        >
+                                            <li className="hiddenDropdownLi">
+                                                <a className="hiddenDropdownLink" href="#">YKS 2022</a>
+                                            </li>
+                                            <li className="hiddenDropdownLi">
+                                                <a className="hiddenDropdownLink" href="#">YKS 2022</a>
+                                            </li>
+                                            <li className="hiddenDropdownLi">
+                                                <a className="hiddenDropdownLink" href="#">YKS 2022</a>
+                                            </li>
+                                            <li className="hiddenDropdownLi">
+                                                <a className="hiddenDropdownLink" href="#">YKS 2022</a>
+                                            </li>
+                                            <li className="hiddenDropdownLi">
+                                                <a className="hiddenDropdownLink" href="#">YKS 2022</a>
+                                            </li>
+                                            <li className="hiddenDropdownLi">
+                                                <a className="hiddenDropdownLink" href="#">YKS 2022</a>
+                                            </li>
+                                            <li className="hiddenDropdownLi">
+                                                <a className="hiddenDropdownLink" href="#">YKS 2022</a>
+                                            </li>
+                                        </ul>
+                                    )
+                                }
+                            </li>
+                            <li>
+                                <Nav.Link className="mx-2" href="#features">Örnek Videolar</Nav.Link>
+                            </li>
+                            <li>
+                                <Nav.Link className="mx-2 d-none d-lg-inline" href="#pricing">Yorumlar & Başarılarımız</Nav.Link>
+                            </li>
+                            <li>
+                                <Nav.Link className="mx-2 d-md-none d-lg-inline" href="#x">Yardım</Nav.Link>
+                            </li>
+                            {/* BİZ KİMİZ VE HİDDEN NAVBAR */}
+                            <li style={{ position: 'relative' }}>
+                                <Nav.Link
+                                    className="mx-2 d-none d-xl-inline"
+                                    style={navLinkStyle}
+                                    href="#gg"
                                     onMouseOver={e => {
                                         setStyleBizeUlasin({ display: 'block' });
                                     }}
@@ -159,31 +159,47 @@ function HomepageNavbar() {
                                         setStyleBizeUlasin({ display: 'none' })
                                     }}
                                 >
-                                    <li className="hiddenDropdownLi">
-                                        <a className="hiddenDropdownLink" href="#">YKS 2022</a>
-                                    </li>
-                                    <li className="hiddenDropdownLi">
-                                        <a className="hiddenDropdownLink" href="#">YKS 2022</a>
-                                    </li>
-                                    <li className="hiddenDropdownLi">
-                                        <a className="hiddenDropdownLink" href="#">YKS 2022</a>
-                                    </li>
-                                    <li className="hiddenDropdownLi">
-                                        <a className="hiddenDropdownLink" href="#">YKS 2022</a>
-                                    </li>
-                                    <li className="hiddenDropdownLi">
-                                        <a className="hiddenDropdownLink" href="#">YKS 2022</a>
-                                    </li>
-                                    <li className="hiddenDropdownLi">
-                                        <a className="hiddenDropdownLink" href="#">YKS 2022</a>
-                                    </li>
-                                    <li className="hiddenDropdownLi">
-                                        <a className="hiddenDropdownLink" href="#">YKS 2022</a>
-                                    </li>
-                                </ul>
-                            )
-                        }
-                        <Nav.Link className="mx-2 d-md-none d-xl-inline" href="#z">Bize Ulaşın</Nav.Link>
+                                    <span style={{ cursor: 'pointer' }}>Biz Kimiz</span>
+                                </Nav.Link>
+                                {
+                                    visibilityHiddenDropdown &&
+                                    (
+                                        <ul
+                                            style={styleBizeUlasin}
+                                            className="hiddenDropdown positionForBizeUlasin"
+                                            onMouseOver={e => {
+                                                setStyleBizeUlasin({ display: 'block' });
+                                            }}
+                                            onMouseLeave={e => {
+                                                setStyleBizeUlasin({ display: 'none' })
+                                            }}
+                                        >
+                                            <li className="hiddenDropdownLi">
+                                                <a className="hiddenDropdownLink" href="#">YKS 2022</a>
+                                            </li>
+                                            <li className="hiddenDropdownLi">
+                                                <a className="hiddenDropdownLink" href="#">YKS 2022</a>
+                                            </li>
+                                            <li className="hiddenDropdownLi">
+                                                <a className="hiddenDropdownLink" href="#">YKS 2022</a>
+                                            </li>
+                                            <li className="hiddenDropdownLi">
+                                                <a className="hiddenDropdownLink" href="#">YKS 2022</a>
+                                            </li>
+                                            <li className="hiddenDropdownLi">
+                                                <a className="hiddenDropdownLink" href="#">YKS 2022</a>
+                                            </li>
+                                            <li className="hiddenDropdownLi">
+                                                <a className="hiddenDropdownLink" href="#">YKS 2022</a>
+                                            </li>
+                                            <li className="hiddenDropdownLi">
+                                                <a className="hiddenDropdownLink" href="#">YKS 2022</a>
+                                            </li>
+                                        </ul>
+                                    )
+                                }
+                            </li>
+                        </ul>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
