@@ -30,6 +30,22 @@ function HomepageNavbar() {
         cursor: 'default'
     }
 
+    /*
+        yeni eklediğim ul-li yapısının style'ını width'e göre ayarlamak için
+        mecburen bu şekilde yapıyorum. display:flex eklediğim için toggle zamanında da
+        yan yana duruyor linkler...
+    */
+    const navUlStyle = window.innerWidth > '768' ? {
+        listStyleType: 'none',
+        display: 'flex',
+        justifyContent: 'end',
+        alignItems: 'center',
+        marginBottom: '0',
+    } : {
+        listStyleType: 'none',
+        marginBottom: '0',
+    }
+
     //window width değiştiği an yeni değerini dispatch etmek istiyoruz.
     const updateSize = () => {
         if (window.innerWidth > 1200) {
@@ -76,13 +92,7 @@ function HomepageNavbar() {
                         className="text-center justify-content-end"
                     >
                         <ul
-                            style={{
-                                listStyleType: 'none',
-                                display: 'flex',
-                                justifyContent: 'end',
-                                alignItems: 'center',
-                                marginBottom: '0',
-                            }}
+                            style={navUlStyle}
                         >
                             {/* EĞİTİM PAKETLERİMİZ VE HİDDEN NAVBAR */}
                             <li style={{ position: 'relative' }}>
@@ -141,7 +151,7 @@ function HomepageNavbar() {
                                 <Nav.Link className="mx-2" href="#features">Örnek Videolar</Nav.Link>
                             </li>
                             <li>
-                                <Nav.Link className="mx-2 d-none d-lg-inline" href="#pricing">Yorumlar & Başarılarımız</Nav.Link>
+                                <Nav.Link className="mx-2 d-md-none d-lg-inline" href="#pricing">Yorumlar & Başarılarımız</Nav.Link>
                             </li>
                             <li>
                                 <Nav.Link className="mx-2 d-md-none d-lg-inline" href="#x">Yardım</Nav.Link>
@@ -149,7 +159,7 @@ function HomepageNavbar() {
                             {/* BİZ KİMİZ VE HİDDEN NAVBAR */}
                             <li style={{ position: 'relative' }}>
                                 <Nav.Link
-                                    className="mx-2 d-none d-xl-inline"
+                                    className="mx-2 d-md-none d-xl-inline"
                                     style={navLinkStyle}
                                     href="#gg"
                                     onMouseOver={e => {
