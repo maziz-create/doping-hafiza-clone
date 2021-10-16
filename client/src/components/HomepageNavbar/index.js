@@ -33,7 +33,7 @@ function HomepageNavbar() {
         mecburen bu şekilde yapıyorum. display:flex eklediğim için toggle zamanında da
         yan yana duruyor linkler...
     */
-    const navUlStyle = window.innerWidth > '768' ? {
+    const navUlStyle = window.innerWidth > 768 ? {
         listStyleType: 'none',
         display: 'flex',
         justifyContent: 'end',
