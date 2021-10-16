@@ -22,11 +22,9 @@ function HomepageNavbar() {
     // navbarCollapse aktif olduktan sonra text align sıkıntı oluşturuyor.
     const navLinkStyle = visibilityHiddenDropdown ? {
         textAlign: 'end',
-        paddingBottom: '12px',
         cursor: 'default'
     } : {
         textAlign: 'center',
-        paddingBottom: '12px',
         cursor: 'default'
     }
 
@@ -107,7 +105,7 @@ function HomepageNavbar() {
                                         setStyleOrnekVideolar({ display: 'none' })
                                     }}
                                 >
-                                    <span style={{ cursor: 'pointer' }}>Eğitim Paketlerimiz</span>
+                                    <span style={{ cursor: 'pointer', paddingBottom: '30px' }}>Eğitim Paketlerimiz</span>
                                 </Nav.Link>
                                 {
                                     visibilityHiddenDropdown &&
@@ -169,7 +167,7 @@ function HomepageNavbar() {
                                         setStyleBizeUlasin({ display: 'none' })
                                     }}
                                 >
-                                    <span style={{ cursor: 'pointer' }}>Biz Kimiz</span>
+                                    <span style={{ paddingBottom: '30px', cursor: 'pointer' }}>Biz Kimiz</span>
                                 </Nav.Link>
                                 {
                                     visibilityHiddenDropdown &&
