@@ -48,10 +48,13 @@ function FixedNavbar({ scrollY }) {
     //sticky navbar için kodlar.
     const [scroll, setScroll] = useState(scrollY);
     const [styleFixed, setStyleFixed] = useState();
-    const [styleDisplay, setStyleDisplay] = useState({ display: 'none' })
+    const [styleDisplay, setStyleDisplay] = useState({ display: 'none' });
+    //mobildeyken sayfayı yenilediğinde buradaki navbar gözükmüyordu. scroll oynandığında gözüküyordu...
+    const [isLoading, setIsLoading] = useState(false);
 
     useEffect(() => {
         setScroll(scrollY);
+        setIsLoading(!isLoading);
         if (scroll > 590) {
             // Fixed = top için.
             setStyleFixed('top');
@@ -59,8 +62,9 @@ function FixedNavbar({ scrollY }) {
         } else {
             setStyleFixed();
             setStyleDisplay({ display: 'none' });
+            console.log('heyo');
         }
-    }, [scrollY])
+    }, [scrollY, isLoading])
 
     // /*
     // BU KISIMLARI DAHA SONRA HALLEDECEĞİM ÇOK KARMAŞIK! ZATEN ANİMASYONLARIN ALAYI BÖYLE.
@@ -174,7 +178,7 @@ function FixedNavbar({ scrollY }) {
                                         <Nav.Link className="mx-2 d-none d-lg-inline" href="#pricing">Yorumlar & Başarılarımız</Nav.Link>
                                     </li>
                                     <li>
-                                        <Nav.Link className="mx-2 d-md-none d-lg-inline" href="#x">Yardım</Nav.Link>
+                                        <Nav.Link className="mx-2 d-md-none d-xl-inline" href="#x">Yardım</Nav.Link>
                                     </li>
                                     <li style={{ position: 'relative' }}>
                                         {/* BİZ KİMİZ VE HİDDEN NAVBAR */}
