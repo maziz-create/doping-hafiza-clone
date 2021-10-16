@@ -105,7 +105,7 @@ function HomepageNavbar() {
                                         setStyleOrnekVideolar({ display: 'none' })
                                     }}
                                 >
-                                    <span style={{ cursor: 'pointer', paddingBottom: '30px' }}>Eğitim Paketlerimiz</span>
+                                    <span className="navTitle" style={{ cursor: 'pointer' }}>Eğitim Paketlerimiz</span>
                                 </Nav.Link>
                                 {
                                     visibilityHiddenDropdown &&
@@ -167,7 +167,7 @@ function HomepageNavbar() {
                                         setStyleBizeUlasin({ display: 'none' })
                                     }}
                                 >
-                                    <span style={{ paddingBottom: '30px', cursor: 'pointer' }}>Biz Kimiz</span>
+                                    <span className="navTitle" style={{ cursor: 'pointer' }}>Biz Kimiz</span>
                                 </Nav.Link>
                                 {
                                     visibilityHiddenDropdown &&
