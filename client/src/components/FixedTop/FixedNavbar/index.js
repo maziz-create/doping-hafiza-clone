@@ -228,9 +228,6 @@ function FixedNavbar({ scrollY }) {
                                             )
                                         }
                                     </li>
-                                    <li>
-                                        <Nav.Link className="mx-2 d-md-none d-xl-inline" href="#z">Bize Ulaşın</Nav.Link>
-                                    </li>
                                 </ul>
                             </Nav>
                         </Navbar.Collapse>
