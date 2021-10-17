@@ -46,25 +46,20 @@ function FixedNavbar({ scrollY }) {
     }
 
     //sticky navbar için kodlar.
-    const [scroll, setScroll] = useState(scrollY);
     const [styleFixed, setStyleFixed] = useState();
     const [styleDisplay, setStyleDisplay] = useState({ display: 'none' });
-    //mobildeyken sayfayı yenilediğinde buradaki navbar gözükmüyordu. scroll oynandığında gözüküyordu...
-    const [isLoading, setIsLoading] = useState(false);
 
     useEffect(() => {
-        setScroll(scrollY);
-        setIsLoading(!isLoading);
-        if (scroll > 590) {
+        if (scrollY > 590) {
             // Fixed = top için.
             setStyleFixed('top');
             setStyleDisplay({ display: 'block' });
         } else {
             setStyleFixed();
             setStyleDisplay({ display: 'none' });
-            console.log('heyo');
+            // console.log('heyo');
         }
-    }, [scrollY, isLoading])
+    }, [scrollY])
 
     // /*
     // BU KISIMLARI DAHA SONRA HALLEDECEĞİM ÇOK KARMAŞIK! ZATEN ANİMASYONLARIN ALAYI BÖYLE.
