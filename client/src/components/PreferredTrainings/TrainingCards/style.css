@@ -1,0 +1,79 @@
+.successRate {
+    background-color: rgb(113, 181, 27);
+    color: #fff;
+    font-size: 10px;
+    line-height: 18px;
+    padding: 6px 9px 6px 11px;
+    /* display: inline-flex; */
+    align-items: center;
+    border-radius: 7px;
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #0b6ab2;
+    margin-top: 30px;
+    display: inline;
+
+}
+
+.product-old-price {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    display: inline;
+    line-height: 24px;
+    margin-left: 10px;
+    text-decoration-line: line-through;
+    color: #cc171b;
+}
+
+.cardBody li {
+    opacity: .7;
+    font-size: 14px;
+}
+
+.productimage-area {
+    background-image: url('../../../assets/images/tyt-tum-ders-ayt-sayisal-b.jpg');
+    height: 200px;
+    flex: none;
+}
+
+.product-image {
+    background-image: url(https://img-dopinghafiza.mncdn.com/assets/files/shop/tyt-tum-ders-ayt-sayisal.jpg);
+    background-size: contain;
+    background-position: center;
+}
+
+.product-iconarea {
+    width: 90px;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.product-iconarea:last-child {
+    margin-bottom: 5px;
+}
+
+.product-icon {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.product-icon img {
+    width: 85px;
+}
