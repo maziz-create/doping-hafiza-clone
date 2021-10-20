@@ -159,21 +159,43 @@
 
 /* NOT: contentlere tek tek 1, 2, 3 ve 4 verip burada ayarlama yapacaksın mobil için. */
 @media screen and (max-width: 430px) {
-    
+    .carousel-3-Content {
+        margin-right: 2rem;
+    }
 }
 
+
 @media screen and (max-width: 410px) {
-    .carousel-1-Content {
+    .carousel-1-Content,
+    .carousel-2-Content {
         margin-right: 1rem;
+    }
+
+    .carousel-3-Content,
+    .carousel-4-Content {
+        margin-right: 3rem;
     }
 }
 
 @media screen and (max-width: 390px) {
-    
+    .carousel-2-Content {
+        margin-right: 2rem;
+    }
+
+    .carousel-3-Content,
+    .carousel-4-Content {
+        margin-right: 4rem;
+    }
 }
 
 @media screen and (max-width: 370px) {
-    .carousel-1-Content {
+    .carousel-1-Content,
+    .carousel-2-Content {
         margin-right: 3rem;
+    }
+
+    .carousel-3-Content,
+    .carousel-4-Content {
+        margin-right: 5rem;
     }
 }
