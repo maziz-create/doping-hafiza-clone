@@ -166,6 +166,9 @@ function HomepageCarousel() {
                                         Öğrencilerimiz her sene Türkiye <br />
                                         derecelerine imza atıyor!
                                     </p>
+                                    <Button variant="primary" className="px-4 py-3 carouselItemDivButton">
+                                        Derece Yapan Öğrencilerimiz
+                                    </Button>
                                 </div>
                             )
                         }
@@ -179,14 +182,13 @@ function HomepageCarousel() {
                                         Öğrencilerimiz her sene Türkiye <br />
                                         derecelerine imza atıyor!
                                     </p>
+                                    <Button variant="primary" className="px-4 py-3 carouselItemDivButton">
+                                        Derece Yapan Öğrencilerimiz
+                                    </Button>
                                 </div>
                             )
 
                         }
-
-                        <Button variant="primary" className="px-4 py-3 carouselItemDivButton">
-                            Derece Yapan Öğrencilerimiz
-                        </Button>
                     </div>
                     <div className="carouselItem-4-ImgDiv">
                         <img
