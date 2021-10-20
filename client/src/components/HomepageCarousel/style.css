@@ -114,3 +114,66 @@
         height: 27rem;
     }
 }
+
+/* for mobile */
+
+@media screen and (max-width: 550px) {
+
+    .carouselItem-1-ImgDiv,
+    .carouselItem-3-ImgDiv {
+        margin-top: 3rem;
+    }
+    
+    .carouselItem-1-ImgDiv img,
+    .carouselItem-3-ImgDiv img {
+        height: 18rem;
+    }
+
+    .carouselItemDivButton {
+        margin-top: 15px;
+    }
+
+    .carouselItemDiv-heading-letter4,
+    .carouselItemDiv-heading-letter0 {
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .carouselItem-1-ImgDiv,
+    .carouselItem-3-ImgDiv {
+        margin-top: 5rem;
+    }
+    
+    .carouselItem-1-ImgDiv img,
+    .carouselItem-3-ImgDiv img {
+        height: 15rem;
+    }
+
+    .carouselItemDiv-heading-letter4,
+    .carouselItemDiv-heading-letter0 {
+        font-size: 1.7rem;
+    }
+}
+
+
+/* NOT: contentlere tek tek 1, 2, 3 ve 4 verip burada ayarlama yapacaksın mobil için. */
+@media screen and (max-width: 430px) {
+    
+}
+
+@media screen and (max-width: 410px) {
+    .carousel-1-Content {
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    
+}
+
+@media screen and (max-width: 370px) {
+    .carousel-1-Content {
+        margin-right: 3rem;
+    }
+}

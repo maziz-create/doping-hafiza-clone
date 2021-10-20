@@ -45,26 +45,54 @@ function HomepageCarousel() {
                     <div className="carouselItemDiv-26" style={{
                         color: '#fff',
                     }}>
-                        <h3 className="carouselItemDiv-heading-letter4">
-                            TYT - AYT Kaç Günde Biter?
-                        </h3>
-                        <p className="carouselItemDiv-text">
-                            Doping Hafıza eğitimleri ile{' '}
-                            <strong>
-                                TYT-AYT'yi kaç günde
-                            </strong>
-                            {' '}bitirebileceğinizi hesaplayabilirsiniz!
-                        </p>
-                        <Button
-                            className="carouselItemDivButton px-4 py-3"
-                            style={{ color: 'purple' }}
-                            variant="light">
-                            Hemen Hesaplayın!
-                        </Button>
+                        {
+                            window.innerWidth > 550 && (
+                                <div>
+                                    <h3 className="carouselItemDiv-heading-letter4">
+                                        TYT - AYT Kaç Günde Biter?
+                                    </h3>
+                                    <p className="carouselItemDiv-text">
+                                        Doping Hafıza eğitimleri ile{' '}
+                                        <strong>
+                                            TYT-AYT'yi kaç günde
+                                        </strong>
+                                        {' '}bitirebileceğinizi hesaplayabilirsiniz!
+                                    </p>
+                                    <Button
+                                        className="carouselItemDivButton px-4 py-3"
+                                        style={{ color: 'purple' }}
+                                        variant="light">
+                                        Hemen Hesaplayın!
+                                    </Button>
+                                </div>
+                            )
+                        }
+                        {
+                            window.innerWidth < 550 && (
+                                <div className="carousel-1-Content">
+                                    <h3 className="carouselItemDiv-heading-letter4">
+                                        TYT - AYT <br /> Kaç Günde Biter?
+                                    </h3>
+                                    <p className="carouselItemDiv-text">
+                                        Doping Hafıza eğitimleri ile <br />
+                                        <strong>
+                                            TYT-AYT'yi kaç günde
+                                        </strong>
+                                        {' '}bitirebileceğinizi hesaplayabilirsiniz!
+                                    </p>
+                                    <Button
+                                        className="carouselItemDivButton px-4 py-3"
+                                        style={{ color: 'purple' }}
+                                        variant="light">
+                                        Hemen Hesaplayın!
+                                    </Button>
+                                </div>
+                            )
+                        }
                     </div>
                     <div className="carouselItem-1-ImgDiv">
                         <img
-                            className="d-block me-5"
+                            className="d-block"
                             src={home_slider_one}
                             alt="First slide"
                         />
@@ -75,17 +103,19 @@ function HomepageCarousel() {
                     <div className="carouselItemDiv-26" style={{
                         color: '#fff',
                     }}>
-                        <h3 className="carouselItemDiv-heading-letter0">
-                            Eğitimlerimizde Hangi Methodları Kullanıyoruz?
-                        </h3>
-                        <p className="carouselItemDiv-text">
-                            Örnek eğitim videolarımızı inceleyerek <br />
-                            Doping Hafıza Yeni Nesil Online Eğitim Platformu'nda <br />
-                            sizi neler bekliyor görebilirsiniz!
-                        </p>
-                        <Button variant="primary" className="px-4 py-3 carouselItemDivButton">
-                            Örnek Eğitim Videolarını İzleyin!
-                        </Button>
+                        <div className="carousel-2-Content">
+                            <h3 className="carouselItemDiv-heading-letter0">
+                                Eğitimlerimizde Hangi Methodları Kullanıyoruz?
+                            </h3>
+                            <p className="carouselItemDiv-text">
+                                Örnek eğitim videolarımızı inceleyerek <br />
+                                Doping Hafıza Yeni Nesil Online Eğitim Platformu'nda <br />
+                                sizi neler bekliyor görebilirsiniz!
+                            </p>
+                            <Button variant="primary" className="px-4 py-3 carouselItemDivButton">
+                                Örnek Eğitim Videolarını İzleyin!
+                            </Button>
+                        </div>
                     </div>
                     <div className="carouselItem-2-ImgDiv">
                         <img
@@ -100,16 +130,18 @@ function HomepageCarousel() {
                     <div className="carouselItemDiv-28" style={{
                         color: '#fff',
                     }}>
-                        <h3 className="carouselItemDiv-heading-letter0">
-                            2022 YKS'de Erken Kayıt Avantajları!
-                        </h3>
-                        <p className="carouselItemDiv-text">
-                            Doping Hafıza ile <br />
-                            Sınav Sonuçlarınızda Fark Yaratın!
-                        </p>
-                        <Button variant="primary" className="px-4 py-3 carouselItemDivButton">
-                            Detayları İnceleyin!
-                        </Button>
+                        <div className="carousel-3-Content">
+                            <h3 className="carouselItemDiv-heading-letter0">
+                                2022 YKS'de Erken Kayıt Avantajları!
+                            </h3>
+                            <p className="carouselItemDiv-text">
+                                Doping Hafıza ile <br />
+                                Sınav Sonuçlarınızda Fark Yaratın!
+                            </p>
+                            <Button variant="primary" className="px-4 py-3 carouselItemDivButton">
+                                Detayları İnceleyin!
+                            </Button>
+                        </div>
                     </div>
                     <div className="carouselItem-3-ImgDiv">
                         <img
@@ -124,13 +156,34 @@ function HomepageCarousel() {
                     <div className="carouselItemDiv-28" style={{
                         color: '#fff',
                     }}>
-                        <h3 className="carouselItemDiv-heading-letter0">
-                            2021 YKS Sonuçları Açıklandı!
-                        </h3>
-                        <p className="carouselItemDiv-text">
-                            Öğrencilerimiz her sene Türkiye <br />
-                            derecelerine imza atıyor!
-                        </p>
+                        {
+                            window.innerWidth > 550 && (
+                                <div>
+                                    <h3 className="carouselItemDiv-heading-letter0">
+                                        2021 YKS Sonuçları Açıklandı!
+                                    </h3>
+                                    <p className="carouselItemDiv-text">
+                                        Öğrencilerimiz her sene Türkiye <br />
+                                        derecelerine imza atıyor!
+                                    </p>
+                                </div>
+                            )
+                        }
+                        {
+                            window.innerWidth < 550 && (
+                                <div className="carousel-4-Content">
+                                    <h3 className="carouselItemDiv-heading-letter0">
+                                        2021 YKS Sonuçları <br /> Açıklandı!
+                                    </h3>
+                                    <p className="carouselItemDiv-text">
+                                        Öğrencilerimiz her sene Türkiye <br />
+                                        derecelerine imza atıyor!
+                                    </p>
+                                </div>
+                            )
+
+                        }
+
                         <Button variant="primary" className="px-4 py-3 carouselItemDivButton">
                             Derece Yapan Öğrencilerimiz
                         </Button>
