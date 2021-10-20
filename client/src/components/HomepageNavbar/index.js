@@ -67,7 +67,7 @@ function HomepageNavbar() {
                         style={{ filter: 'brightness(0) invert(1)' }}
                         alt=""
                         src={logo}
-                        className="d-inline-block"
+                        className="logo d-inline-block"
                     />
                 </Navbar.Brand>
                 <Navbar.Toggle onClick={() =>
