@@ -56,7 +56,7 @@ function TrainingCards() {
                                     </div>
                                     <div className="product-iconarea me-2">
                                         <div className="product-icon">
-                                            <img src="https://cdn.dopinghafiza.com/files/attribute/tarih-cografya-icon.webp" alt="Doping Hafıza Tarih Yolculuğu ve Coğrafya Macerası" class="mx-auto" />
+                                            <img src="https://cdn.dopinghafiza.com/files/attribute/tarih-cografya-icon.webp" alt="Doping Hafıza Tarih Yolculuğu ve Coğrafya Macerası" className="mx-auto" />
                                         </div>
                                     </div>
                                 </div>
