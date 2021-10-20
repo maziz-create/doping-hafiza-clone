@@ -49,7 +49,7 @@ function FixedNavbar({ scrollY }) {
     const [styleDisplay, setStyleDisplay] = useState({ display: 'none' });
 
     useEffect(() => {
-        if (scrollY > 590) {
+        if (scrollY > 650) {
             // Fixed = top için.
             setStyleFixed('top');
             setStyleDisplay({ display: 'block' });
