@@ -8,7 +8,6 @@ import Navbar from 'react-bootstrap/Navbar'
 
 import logo from '../../../assets/images/logo.svg'
 
-
 function FixedNavbar({ scrollY }) {
     //HomepageNavbar'dan alınan kodlar
     const [styleOrnekVideolar, setStyleOrnekVideolar] = useState({ display: 'none' });
@@ -94,7 +93,7 @@ function FixedNavbar({ scrollY }) {
                                 // style={{ filter: 'brightness(0) invert(1)' }}
                                 alt=""
                                 src={logo}
-                                className="d-inline-block"
+                                className="logo d-inline-block"
                             />
                         </Navbar.Brand>
                         <Navbar.Toggle aria-controls="navbarScroll" />

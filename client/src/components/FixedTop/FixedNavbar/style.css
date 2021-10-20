@@ -1,3 +1,9 @@
+@media screen and (max-width: 550px) {
+   .logo {
+       width: 14rem;
+   }
+}
+
 /* bunu verme sebebim mouse gözükme problemi içindi. önceden de farklı çözümler uygulamıştım.
 bunu md'den sonrasına alma sebebim ise toggle durumunda padding sorun çıkartıyordu mobilde.
 */
